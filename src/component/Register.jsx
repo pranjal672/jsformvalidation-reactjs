@@ -78,9 +78,9 @@ export default function Register() {
                     headers: { "Content-Type": "application/json" },
                     withCredentials: true
                 })
-            console.log(response.accessToken)
-            console.log(response.data)
-            console.log(JSON.stringify(response))
+            // console.log(response.accessToken)
+            // console.log(response.data)
+            // console.log(JSON.stringify(response))
             setSuccess(true)
             // clear fields
             setUser("")

@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import useAuth from "../hooks/useAuth"
+import useAuth from "../hooks/useAuth";
 import axios from "../api/axios";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -36,7 +36,7 @@ export default function Login() {
         })
       const accessToken = response?.data?.accessToken
       const roles = response?.data?.roles
-      console.log(JSON.stringify(response.data))
+      // console.log(JSON.stringify(response.data))
 
       setAuth({ user, pwd, roles, accessToken })
       setUser("")

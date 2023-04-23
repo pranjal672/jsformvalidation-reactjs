@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom"
+
 const Editor = () => {
     return (
-        <div>Editor</div>
+        <div>
+            <h1>Editor</h1>
+            <p><Link to="/">back to Home</Link></p>
+        </div>
     )
 }
 
